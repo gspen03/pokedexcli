@@ -15,7 +15,7 @@ type config struct {
 	prevLocationsURL	*string
 }
 
-func startRepl() {
+func startRepl(cfg *config) {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	for {
